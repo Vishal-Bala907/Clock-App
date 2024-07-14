@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="403.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.imageviewnodeinfx.TimerController">
+    <children>
+        <Label fx:id="Hour" layoutX="14.0" layoutY="119.0" text="00">
+            <font>
+                <Font size="120.0" />
+            </font>
+        </Label>
+        <Label layoutX="158.0" layoutY="109.0" text=":" textFill="#fbff00">
+            <font>
+                <Font size="120.0" />
+            </font>
+        </Label>
+        <Label fx:id="Min" layoutX="218.0" layoutY="119.0" text="00">
+            <font>
+                <Font size="120.0" />
+            </font>
+        </Label>
+        <Label layoutX="384.0" layoutY="109.0" text=":" textFill="#fbff00">
+            <font>
+                <Font size="120.0" />
+            </font>
+        </Label>
+        <Label fx:id="Sec" layoutX="444.0" layoutY="119.0" text="00">
+            <font>
+                <Font size="120.0" />
+            </font>
+        </Label>
+        <Label fx:id="HourLabel" layoutX="144.0" layoutY="270.0" text="Hour :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="MinLabel" layoutX="124.0" layoutY="311.0" text="Minute :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="SecLabel" layoutX="116.0" layoutY="356.0" text="Seconds :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="HourText" layoutX="222.0" layoutY="272.0" onAction="#SetLabel" promptText="hour" text="00" />
+        <TextField fx:id="MinText" layoutX="222.0" layoutY="313.0" promptText="minute" text="00" />
+        <TextField fx:id="SecText" layoutX="221.0" layoutY="358.0" promptText="seconds" text="30" />
+        <Button fx:id="StartButton" layoutX="436.0" layoutY="271.0" mnemonicParsing="false" onAction="#StartTimer" prefHeight="27.0" prefWidth="55.0" text="START" />
+        <Button fx:id="ResetButton" layoutX="436.0" layoutY="357.0" mnemonicParsing="false" onAction="#ResetTimer" prefHeight="27.0" prefWidth="55.0" text="STOP" />
+        <Button fx:id="PauseButton" alignment="CENTER" contentDisplay="CENTER" layoutX="435.0" layoutY="313.0" mnemonicParsing="false" onAction="#PauseTimer" prefHeight="27.0" prefWidth="55.0" text="PAUSE" />
+        <Line endX="509.0999755859375" layoutX="94.0" layoutY="44.0" startX="-100.0" />
+        <Label alignment="CENTER" layoutY="44.0" prefHeight="80.0" prefWidth="603.0" style="-fx-background-color: SkyBlue;" text="TIMER">
+            <font>
+                <Font name="System Bold" size="54.0" />
+            </font>
+        </Label>
+        <Line endX="496.29290771484375" layoutX="106.0" layoutY="124.0" startX="-112.40000915527344" />
+        <Line endX="485.49285888671875" endY="105.0" layoutX="116.0" layoutY="155.0" startX="-126.80711364746094" startY="105.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="603.0" style="-fx-background-color: #c27ccf;">
+         <children>
+            <ComboBox fx:id="MYCB3" onAction="#WatchAgain" prefHeight="29.0" prefWidth="184.0" promptText="Switch Between" style="-fx-background-color: #b77ef7; -fx-border-color: #9c2d6a; -fx-border-width: 2px; -fx-border-radius: 15px; -fx-background-radius: 15px;" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

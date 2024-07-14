@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="APane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.imageviewnodeinfx.StopWatchController">
+   <children>
+      <Button layoutX="506.0" layoutY="335.0" mnemonicParsing="false" onAction="#HelloHello" text="Button" />
+      <Label fx:id="Hour" alignment="CENTER" layoutX="98.0" layoutY="109.0" prefHeight="20.0" prefWidth="20.0" text="00" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="100.0" />
+      <Label fx:id="Col1" layoutX="33.0" layoutY="148.0" prefHeight="20.0" text=":" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="148.0" />
+      <Label fx:id="Minute" alignment="CENTER" layoutX="243.0" layoutY="316.0" prefHeight="35.0" prefWidth="25.0" text="00" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="200.0" />
+      <Label fx:id="Col2" layoutX="21.0" layoutY="234.0" prefHeight="20.0" prefWidth="3.0" text=":" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="248.0" />
+      <Label fx:id="Seconds" alignment="CENTER" layoutX="125.0" layoutY="100.0" prefHeight="165.0" prefWidth="125.0" text="00" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

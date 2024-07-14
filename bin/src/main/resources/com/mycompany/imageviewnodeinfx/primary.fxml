@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #551c87;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.imageviewnodeinfx.PrimaryController">
+    <children>
+        <Label fx:id="Min" layoutX="173.0" layoutY="200.0" text="00" textFill="WHITE">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <Label layoutX="290.0" layoutY="200.0" prefHeight="19.0" prefWidth="3.0" text=":" textFill="WHITE">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <Label fx:id="Hour" layoutX="14.0" layoutY="200.0" text="00" textFill="WHITE">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <Label layoutX="125.0" layoutY="200.0" text=":" textFill="WHITE">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <Label fx:id="Sec" layoutX="333.0" layoutY="200.0" text="00" textFill="WHITE">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <VBox layoutX="470.0" layoutY="144.0" maxHeight="50.0" maxWidth="80.0" prefHeight="200.0" prefWidth="100.0" />
+        <ImageView fx:id="IVA" fitHeight="50.0" fitWidth="80.0" layoutX="470.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true" />
+        <Line endX="448.39996337890625" endY="-20.800010681152344" layoutX="153.0" layoutY="205.0" startX="-156.3000030517578" startY="-20.800010681152344" stroke="WHITE" strokeWidth="3.0" />
+      <HBox layoutX="1.0" prefHeight="59.0" prefWidth="600.0" style="-fx-alignment: center; -fx-spacing: 20px; -fx-background-color: #bb9ad9; -fx-border-radius: 10px; -fx-border-image-width: 15px; -fx-border-color: purple;">
+         <children>
+            <ComboBox fx:id="TimeFormat" onAction="#SetTimeFormat" prefHeight="31.0" prefWidth="159.0" promptText="Select Time Format" style="-fx-background-color: #bb9ad9; -fx-border-radius: 15PX; -fx-border-color: #097187; -fx-border-width: 2px;" visibleRowCount="2" />
+            <ComboBox fx:id="Clocks" onAction="#SwitchBetween" prefHeight="31.0" prefWidth="170.0" promptText="Switch Between" style="-fx-background-color: #bb9ad9; -fx-border-radius: 15px; -fx-border-color: #097187; -fx-border-width: 2PX;" visibleRowCount="2" />
+              <Label alignment="CENTER" prefHeight="59.0" prefWidth="201.0" text="WATCH" textAlignment="CENTER" textFill="#3735ae">
+                  <font>
+                      <Font name="Arial Black" size="40.0" />
+                  </font>
+              </Label>
+         </children>
+      </HBox>
+      <Label fx:id="DateLable" layoutX="14.0" layoutY="75.0" prefHeight="91.0" prefWidth="572.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
